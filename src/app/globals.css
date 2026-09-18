@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffd2e4;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: #e5e5e5;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading-stroke {
+  -webkit-text-stroke: 2px #ffffff;
+  paint-order: stroke fill;
+}
+
+.playful-btn {
+  font-family: var(--font-luckiest-guy);
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  background: #5e3825;
+  border: 3px solid #ffffff;
+  border-radius: 9999px;
+  padding: 0.9rem 2.5rem;
+  box-shadow: 5px 5px 0 0 #5e3825aa, 0 0 0 3px #5e3825;
+  transform: rotate(-2deg);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  cursor: pointer;
+}
+
+.playful-btn:hover {
+  transform: rotate(-2deg) scale(1.05);
+}
+
+.playful-btn:active {
+  transform: rotate(-2deg) scale(0.97);
+  box-shadow: 2px 2px 0 0 #5e3825aa, 0 0 0 3px #5e3825;
+}
