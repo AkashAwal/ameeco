@@ -79,13 +79,14 @@ export default function Home() {
               style={{ fontFamily: "var(--font-body)" }}
             >
               Ameeco began with a craving that turned into a calling. Our
-              founder, Iipsita Gupta, has always felt a deep, soulful
-              connection to the cookie and gelato culture, the way a single
-              bite can hold a memory, a mood, a moment of pure joy. She
-              dreamt of sharing that beauty with everyone around her, of
-              making it easily accessible right in the heart of Gurgaon, at
-              the Galleria. Ameeco is her open invitation to the city: come
-              one, come all, and bless your tastebuds.
+              founder, Iipsita Gupta, a pastry and gelato chef, has always
+              felt a deep, soulful connection to desserts &mdash; specifically
+              cookie and gelato &mdash; the way a single bite can hold a
+              memory, a mood, a moment of pure joy. She dreamt of sharing that
+              joy with everyone around her, of making it easily accessible
+              right in the heart of Gurgaon, at the Galleria. Ameeco is her
+              open invitation to the city: come one, come all, and bless your
+              tastebuds.
             </p>
           </div>
         </div>
@@ -97,23 +98,15 @@ export default function Home() {
             className="heading-stroke font-[family-name:var(--font-heading)] text-3xl tracking-tight"
             style={{ color: "#5e3825" }}
           >
-            Our Galleria store is opening soon
+            Launching September 25
           </h2>
           <p
             className="max-w-md text-lg text-[#5e3825]"
             style={{ fontFamily: "var(--font-body)" }}
           >
-            Can&apos;t wait till then? Order your cookies and gelato online
-            right now.
+            Mark your calendars &mdash; Ameeco opens its doors at The
+            Galleria, Gurgaon on September 25.
           </p>
-          <a
-            href="https://ameeco.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="playful-btn mt-2"
-          >
-            Order Online
-          </a>
         </div>
       </section>
 
@@ -156,7 +149,7 @@ export default function Home() {
           className="mt-3 text-lg text-[#5e3825]"
           style={{ fontFamily: "var(--font-body)" }}
         >
-          Keep your eyes peeled, something sweet is about to drop.
+          Keep your eyes peeled, something sweet drops on September 25.
         </p>
       </section>
 
