@@ -37,9 +37,12 @@ export default function Join() {
             style={{ fontFamily: "var(--font-body)" }}
           >
             Thanks for signing up. Check your inbox, we&rsquo;ve sent you a
-            confirmation, and we can&rsquo;t wait to welcome you at The
-            Galleria, Gurgaon on September 25. Your free surprise is first
-            come, first served, so keep an eye on your inbox.
+            confirmation, and we can&rsquo;t wait to welcome you at{" "}
+            <span className="font-bold">
+              The Galleria, Gurgaon on September 25, 2026
+            </span>
+            . Your free surprise is first come, first served, so keep an eye
+            on your inbox.
           </p>
 
           <Image
@@ -66,8 +69,9 @@ export default function Join() {
             className="mt-3 max-w-md text-lg text-[#5e3825]"
             style={{ fontFamily: "var(--font-body)" }}
           >
-            Drop your details and be the first to know when we open at The
-            Galleria on September 25, plus{" "}
+            Drop your details and be the first to know when we open at{" "}
+            <span className="font-bold">The Galleria on September 25, 2026</span>
+            , plus{" "}
             <span className="font-bold">
               a little surprise waiting just for the early ones (first come,
               first served).

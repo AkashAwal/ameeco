@@ -49,6 +49,24 @@ export default function Home() {
       </main>
 
       <section className="w-full max-w-2xl px-6 py-14">
+        <div className="flex flex-col items-center gap-4 text-center">
+          <h2
+            className="heading-stroke font-[family-name:var(--font-heading)] text-3xl tracking-tight"
+            style={{ color: "#5e3825" }}
+          >
+            Launching September 25
+          </h2>
+          <p
+            className="max-w-md text-lg text-[#5e3825]"
+            style={{ fontFamily: "var(--font-body)" }}
+          >
+            Mark your calendars - Ameeco opens its doors at The Galleria,
+            Gurgaon on September 25, 2026.
+          </p>
+        </div>
+      </section>
+
+      <section className="w-full max-w-2xl px-6 py-14">
         <div className="flex flex-col items-center gap-8 text-center">
           <h2
             className="heading-stroke font-[family-name:var(--font-heading)] text-3xl tracking-tight"
@@ -80,33 +98,15 @@ export default function Home() {
             >
               Ameeco began with a craving that turned into a calling. Our
               founder, Iipsita Gupta, a pastry and gelato chef, has always
-              felt a deep, soulful connection to desserts &mdash; specifically
-              cookie and gelato &mdash; the way a single bite can hold a
-              memory, a mood, a moment of pure joy. She dreamt of sharing that
-              joy with everyone around her, of making it easily accessible
-              right in the heart of Gurgaon, at the Galleria. Ameeco is her
-              open invitation to the city: come one, come all, and bless your
+              felt a deep, soulful connection to desserts, specifically
+              cookie and gelato, the way a single bite can hold a memory, a
+              mood, a moment of pure joy. She dreamt of sharing that joy with
+              everyone around her, of making it easily accessible right in
+              the heart of Gurgaon, at the Galleria. Ameeco is her open
+              invitation to the city: come one, come all, and bless your
               tastebuds.
             </p>
           </div>
-        </div>
-      </section>
-
-      <section className="w-full max-w-2xl px-6 py-14">
-        <div className="flex flex-col items-center gap-4 text-center">
-          <h2
-            className="heading-stroke font-[family-name:var(--font-heading)] text-3xl tracking-tight"
-            style={{ color: "#5e3825" }}
-          >
-            Launching September 25
-          </h2>
-          <p
-            className="max-w-md text-lg text-[#5e3825]"
-            style={{ fontFamily: "var(--font-body)" }}
-          >
-            Mark your calendars &mdash; Ameeco opens its doors at The
-            Galleria, Gurgaon on September 25.
-          </p>
         </div>
       </section>
 
@@ -149,7 +149,7 @@ export default function Home() {
           className="mt-3 text-lg text-[#5e3825]"
           style={{ fontFamily: "var(--font-body)" }}
         >
-          Keep your eyes peeled, something sweet drops on September 25.
+          Keep your eyes peeled, something sweet drops on September 25, 2026.
         </p>
       </section>
 
