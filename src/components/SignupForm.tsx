@@ -52,7 +52,7 @@ export default function SignupForm() {
     return (
       <p
         className="mt-8 text-center text-xl text-[#5e3825]"
-        style={{ fontFamily: "var(--font-baloo-2)" }}
+        style={{ fontFamily: "var(--font-body)" }}
       >
         Thanks, you&rsquo;re on the list! Check your inbox, we&rsquo;ve sent
         you a confirmation.

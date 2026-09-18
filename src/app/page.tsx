@@ -18,14 +18,14 @@ export default function Home() {
 
       <main className="flex w-full max-w-2xl flex-1 flex-col items-center px-6 py-5 text-center">
         <h1
-          className="heading-stroke font-[family-name:var(--font-luckiest-guy)] text-3xl tracking-tight"
+          className="heading-stroke font-[family-name:var(--font-heading)] text-3xl tracking-tight"
           style={{ color: "#5e3825" }}
         >
           NYC Style Cookies & Authentic Italian Gelato.
         </h1>
         <p
           className="mt-3 max-w-md text-lg text-[#5e3825]"
-          style={{ fontFamily: "var(--font-baloo-2)" }}
+          style={{ fontFamily: "var(--font-body)" }}
         >
           Gooey NYC-style cookies. Creamy Italian gelato. Made fresh daily,
           right here in Gurgaon.
@@ -39,7 +39,11 @@ export default function Home() {
           className="mt-3 w-[150px]"
         />
 
-        <Link href="/join" className="playful-btn mt-5">
+        <Link
+          href="/join"
+          className="playful-btn playful-btn-jump mt-5"
+          style={{ position: "relative", top: "10px" }}
+        >
           Join the list
         </Link>
       </main>
@@ -47,7 +51,7 @@ export default function Home() {
       <section className="w-full max-w-2xl px-6 py-14">
         <div className="flex flex-col items-center gap-8 text-center">
           <h2
-            className="heading-stroke font-[family-name:var(--font-luckiest-guy)] text-3xl tracking-tight"
+            className="heading-stroke font-[family-name:var(--font-heading)] text-3xl tracking-tight"
             style={{ color: "#5e3825" }}
           >
             Meet the founder
@@ -63,7 +67,7 @@ export default function Home() {
             />
             <p
               className="mt-[15px] text-center text-3xl tracking-wide text-[#5e3825]"
-              style={{ fontFamily: "var(--font-baloo-2)", fontWeight: 700 }}
+              style={{ fontFamily: "var(--font-body)", fontWeight: 700 }}
             >
               IIPSITA GUPTA
             </p>
@@ -72,7 +76,7 @@ export default function Home() {
           <div className="flex flex-col items-center">
             <p
               className="text-lg text-[#5e3825]"
-              style={{ fontFamily: "var(--font-baloo-2)" }}
+              style={{ fontFamily: "var(--font-body)" }}
             >
               Ameeco began with a craving that turned into a calling. Our
               founder, Iipsita Gupta, has always felt a deep, soulful
@@ -90,14 +94,14 @@ export default function Home() {
       <section className="w-full max-w-2xl px-6 py-14">
         <div className="flex flex-col items-center gap-4 text-center">
           <h2
-            className="heading-stroke font-[family-name:var(--font-luckiest-guy)] text-3xl tracking-tight"
+            className="heading-stroke font-[family-name:var(--font-heading)] text-3xl tracking-tight"
             style={{ color: "#5e3825" }}
           >
             Our Galleria store is opening soon
           </h2>
           <p
             className="max-w-md text-lg text-[#5e3825]"
-            style={{ fontFamily: "var(--font-baloo-2)" }}
+            style={{ fontFamily: "var(--font-body)" }}
           >
             Can&apos;t wait till then? Order your cookies and gelato online
             right now.
@@ -116,7 +120,7 @@ export default function Home() {
       <section className="w-full max-w-2xl px-6 py-14">
         <div className="flex flex-col items-center gap-4 text-center">
           <h2
-            className="heading-stroke font-[family-name:var(--font-luckiest-guy)] text-3xl tracking-tight"
+            className="heading-stroke font-[family-name:var(--font-heading)] text-3xl tracking-tight"
             style={{ color: "#5e3825" }}
           >
             Follow us on Instagram
@@ -126,7 +130,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-full border-[3px] border-[#5e3825] bg-white px-5 py-2 text-lg text-[#5e3825] shadow-[3px_3px_0_0_#5e382555] transition-transform hover:-translate-y-0.5"
-            style={{ fontFamily: "var(--font-baloo-2)", fontWeight: 700 }}
+            style={{ fontFamily: "var(--font-body)", fontWeight: 700 }}
           >
             <svg
               viewBox="0 0 24 24"
@@ -143,14 +147,14 @@ export default function Home() {
 
       <section className="w-full max-w-2xl px-6 pt-14 text-center">
         <h2
-          className="heading-stroke font-[family-name:var(--font-luckiest-guy)] text-3xl tracking-tight"
+          className="heading-stroke font-[family-name:var(--font-heading)] text-3xl tracking-tight"
           style={{ color: "#5e3825" }}
         >
           Tick tock, Gurgaon.
         </h2>
         <p
           className="mt-3 text-lg text-[#5e3825]"
-          style={{ fontFamily: "var(--font-baloo-2)" }}
+          style={{ fontFamily: "var(--font-body)" }}
         >
           Keep your eyes peeled, something sweet is about to drop.
         </p>

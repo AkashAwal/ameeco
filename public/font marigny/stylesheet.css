@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Marigny';
+    src: url('Marigny-BoldItalic.eot');
+    src: local('Marigny Bold Italic'), local('Marigny-BoldItalic'),
+        url('Marigny-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Marigny-BoldItalic.woff2') format('woff2'),
+        url('Marigny-BoldItalic.woff') format('woff'),
+        url('Marigny-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marigny';
+    src: url('Marigny-Book.eot');
+    src: local('Marigny Book'), local('Marigny-Book'),
+        url('Marigny-Book.eot?#iefix') format('embedded-opentype'),
+        url('Marigny-Book.woff2') format('woff2'),
+        url('Marigny-Book.woff') format('woff'),
+        url('Marigny-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marigny';
+    src: url('Marigny-Thin.eot');
+    src: local('Marigny Thin'), local('Marigny-Thin'),
+        url('Marigny-Thin.eot?#iefix') format('embedded-opentype'),
+        url('Marigny-Thin.woff2') format('woff2'),
+        url('Marigny-Thin.woff') format('woff'),
+        url('Marigny-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marigny';
+    src: url('Marigny-BlackItalic.eot');
+    src: local('Marigny Black Italic'), local('Marigny-BlackItalic'),
+        url('Marigny-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Marigny-BlackItalic.woff2') format('woff2'),
+        url('Marigny-BlackItalic.woff') format('woff'),
+        url('Marigny-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marigny';
+    src: url('Marigny-Black.eot');
+    src: local('Marigny Black'), local('Marigny-Black'),
+        url('Marigny-Black.eot?#iefix') format('embedded-opentype'),
+        url('Marigny-Black.woff2') format('woff2'),
+        url('Marigny-Black.woff') format('woff'),
+        url('Marigny-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marigny';
+    src: url('Marigny-MediumItalic.eot');
+    src: local('Marigny Medium Italic'), local('Marigny-MediumItalic'),
+        url('Marigny-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Marigny-MediumItalic.woff2') format('woff2'),
+        url('Marigny-MediumItalic.woff') format('woff'),
+        url('Marigny-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marigny';
+    src: url('Marigny-ThinItalic.eot');
+    src: local('Marigny Thin Italic'), local('Marigny-ThinItalic'),
+        url('Marigny-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('Marigny-ThinItalic.woff2') format('woff2'),
+        url('Marigny-ThinItalic.woff') format('woff'),
+        url('Marigny-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marigny';
+    src: url('Marigny-Medium.eot');
+    src: local('Marigny Medium'), local('Marigny-Medium'),
+        url('Marigny-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Marigny-Medium.woff2') format('woff2'),
+        url('Marigny-Medium.woff') format('woff'),
+        url('Marigny-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marigny';
+    src: url('Marigny-Bold.eot');
+    src: local('Marigny Bold'), local('Marigny-Bold'),
+        url('Marigny-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Marigny-Bold.woff2') format('woff2'),
+        url('Marigny-Bold.woff') format('woff'),
+        url('Marigny-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marigny';
+    src: url('Marigny-BookItalic.eot');
+    src: local('Marigny Book Italic'), local('Marigny-BookItalic'),
+        url('Marigny-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('Marigny-BookItalic.woff2') format('woff2'),
+        url('Marigny-BookItalic.woff') format('woff'),
+        url('Marigny-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

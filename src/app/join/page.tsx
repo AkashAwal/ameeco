@@ -21,14 +21,14 @@ export default function Join() {
 
       <main className="flex w-full flex-1 flex-col items-center px-6 py-10 text-center">
         <h1
-          className="heading-stroke font-[family-name:var(--font-luckiest-guy)] text-3xl tracking-tight"
+          className="heading-stroke font-[family-name:var(--font-heading)] text-3xl tracking-tight"
           style={{ color: "#5e3825" }}
         >
           Join the list
         </h1>
         <p
           className="mt-3 max-w-md text-lg text-[#5e3825]"
-          style={{ fontFamily: "var(--font-baloo-2)" }}
+          style={{ fontFamily: "var(--font-body)" }}
         >
           Drop your details and be the first to know when the Galleria store
           opens, plus{" "}
@@ -50,7 +50,7 @@ export default function Join() {
         <Link
           href="/"
           className="mt-8 text-base text-[#5e3825] underline"
-          style={{ fontFamily: "var(--font-baloo-2)" }}
+          style={{ fontFamily: "var(--font-body)" }}
         >
           Back to home
         </Link>

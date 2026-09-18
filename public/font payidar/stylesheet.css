@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'SK Payidar';
+    src: url('SKPayidar-LightItalic.eot');
+    src: local('SK Payidar Light Italic'), local('SKPayidar-LightItalic'),
+        url('SKPayidar-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidar-LightItalic.woff2') format('woff2'),
+        url('SKPayidar-LightItalic.woff') format('woff'),
+        url('SKPayidar-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SK Payidar';
+    src: url('SKPayidar-Medium.eot');
+    src: local('SK Payidar Medium'), local('SKPayidar-Medium'),
+        url('SKPayidar-Medium.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidar-Medium.woff2') format('woff2'),
+        url('SKPayidar-Medium.woff') format('woff'),
+        url('SKPayidar-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SK Payidar';
+    src: url('SKPayidar-Italic.eot');
+    src: local('SK Payidar Italic'), local('SKPayidar-Italic'),
+        url('SKPayidar-Italic.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidar-Italic.woff2') format('woff2'),
+        url('SKPayidar-Italic.woff') format('woff'),
+        url('SKPayidar-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SK Payidar Rounded';
+    src: url('SKPayidarRounded-Regular.eot');
+    src: local('SK Payidar Rounded'), local('SKPayidarRounded-Regular'),
+        url('SKPayidarRounded-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidarRounded-Regular.woff2') format('woff2'),
+        url('SKPayidarRounded-Regular.woff') format('woff'),
+        url('SKPayidarRounded-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SK Payidar';
+    src: url('SKPayidar-Bold.eot');
+    src: local('SK Payidar Bold'), local('SKPayidar-Bold'),
+        url('SKPayidar-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidar-Bold.woff2') format('woff2'),
+        url('SKPayidar-Bold.woff') format('woff'),
+        url('SKPayidar-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SK Payidar Rounded';
+    src: url('SKPayidarRounded-Light.eot');
+    src: local('SK Payidar Rounded Light'), local('SKPayidarRounded-Light'),
+        url('SKPayidarRounded-Light.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidarRounded-Light.woff2') format('woff2'),
+        url('SKPayidarRounded-Light.woff') format('woff'),
+        url('SKPayidarRounded-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SK Payidar Rounded';
+    src: url('SKPayidarRounded-LightItalic.eot');
+    src: local('SK Payidar Rounded Light Italic'), local('SKPayidarRounded-LightItalic'),
+        url('SKPayidarRounded-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidarRounded-LightItalic.woff2') format('woff2'),
+        url('SKPayidarRounded-LightItalic.woff') format('woff'),
+        url('SKPayidarRounded-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SK Payidar';
+    src: url('SKPayidar-MediumItalic.eot');
+    src: local('SK Payidar Medium Italic'), local('SKPayidar-MediumItalic'),
+        url('SKPayidar-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidar-MediumItalic.woff2') format('woff2'),
+        url('SKPayidar-MediumItalic.woff') format('woff'),
+        url('SKPayidar-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SK Payidar Rounded';
+    src: url('SKPayidarRounded-BoldItalic.eot');
+    src: local('SK Payidar Rounded Bold Italic'), local('SKPayidarRounded-BoldItalic'),
+        url('SKPayidarRounded-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidarRounded-BoldItalic.woff2') format('woff2'),
+        url('SKPayidarRounded-BoldItalic.woff') format('woff'),
+        url('SKPayidarRounded-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SK Payidar';
+    src: url('SKPayidar-BoldItalic.eot');
+    src: local('SK Payidar Bold Italic'), local('SKPayidar-BoldItalic'),
+        url('SKPayidar-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidar-BoldItalic.woff2') format('woff2'),
+        url('SKPayidar-BoldItalic.woff') format('woff'),
+        url('SKPayidar-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SK Payidar Rounded';
+    src: url('SKPayidarRounded-Italic.eot');
+    src: local('SK Payidar Rounded Italic'), local('SKPayidarRounded-Italic'),
+        url('SKPayidarRounded-Italic.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidarRounded-Italic.woff2') format('woff2'),
+        url('SKPayidarRounded-Italic.woff') format('woff'),
+        url('SKPayidarRounded-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SK Payidar';
+    src: url('SKPayidar-Light.eot');
+    src: local('SK Payidar Light'), local('SKPayidar-Light'),
+        url('SKPayidar-Light.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidar-Light.woff2') format('woff2'),
+        url('SKPayidar-Light.woff') format('woff'),
+        url('SKPayidar-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SK Payidar Rounded';
+    src: url('SKPayidarRounded-Bold.eot');
+    src: local('SK Payidar Rounded Bold'), local('SKPayidarRounded-Bold'),
+        url('SKPayidarRounded-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidarRounded-Bold.woff2') format('woff2'),
+        url('SKPayidarRounded-Bold.woff') format('woff'),
+        url('SKPayidarRounded-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SK Payidar';
+    src: url('SKPayidar-ThinItalic.eot');
+    src: local('SK Payidar Thin Italic'), local('SKPayidar-ThinItalic'),
+        url('SKPayidar-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidar-ThinItalic.woff2') format('woff2'),
+        url('SKPayidar-ThinItalic.woff') format('woff'),
+        url('SKPayidar-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SK Payidar';
+    src: url('SKPayidar-Thin.eot');
+    src: local('SK Payidar Thin'), local('SKPayidar-Thin'),
+        url('SKPayidar-Thin.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidar-Thin.woff2') format('woff2'),
+        url('SKPayidar-Thin.woff') format('woff'),
+        url('SKPayidar-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SK Payidar';
+    src: url('SKPayidar-Regular.eot');
+    src: local('SK Payidar'), local('SKPayidar-Regular'),
+        url('SKPayidar-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SKPayidar-Regular.woff2') format('woff2'),
+        url('SKPayidar-Regular.woff') format('woff'),
+        url('SKPayidar-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

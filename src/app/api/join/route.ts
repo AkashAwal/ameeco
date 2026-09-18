@@ -40,6 +40,7 @@ async function appendToSheet(row: string[]) {
     spreadsheetId: sheetId,
     range: "Sheet1!A:F",
     valueInputOption: "USER_ENTERED",
+    insertDataOption: "INSERT_ROWS",
     requestBody: { values: [row] },
   });
 }
@@ -53,7 +54,7 @@ async function sendConfirmationEmail(name: string, email: string) {
   const resend = new Resend(apiKey);
 
   await resend.emails.send({
-    from: "Ameeco <iipsita@ameeco.in>",
+    from: "Ameeco <contact@ameeco.in>",
     to: email,
     subject: "We've received your entry!",
     html: `
@@ -102,7 +103,12 @@ export async function POST(req: NextRequest) {
 
   try {
     await appendToSheet([
-      new Date().toISOString(),
+      "=ROW()-1",
+      new Date().toLocaleString("en-IN", {
+        timeZone: "Asia/Kolkata",
+        dateStyle: "medium",
+        timeStyle: "short",
+      }),
       name,
       phone,
       email,
