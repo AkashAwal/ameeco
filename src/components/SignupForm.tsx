@@ -2,8 +2,11 @@
 
 import { useState } from "react";
 
-export default function SignupForm() {
-  const [submitted, setSubmitted] = useState(false);
+export default function SignupForm({
+  onSuccess,
+}: {
+  onSuccess: () => void;
+}) {
   const [source, setSource] = useState("");
   const [sourceOther, setSourceOther] = useState("");
   const [name, setName] = useState("");
@@ -40,24 +43,12 @@ export default function SignupForm() {
         return;
       }
 
-      setSubmitted(true);
+      onSuccess();
     } catch {
       setFormError("Something went wrong. Please try again.");
     } finally {
       setSubmitting(false);
     }
-  }
-
-  if (submitted) {
-    return (
-      <p
-        className="mt-8 text-center text-xl text-[#5e3825]"
-        style={{ fontFamily: "var(--font-body)" }}
-      >
-        Thanks, you&rsquo;re on the list! Check your inbox, we&rsquo;ve sent
-        you a confirmation.
-      </p>
-    );
   }
 
   return (
