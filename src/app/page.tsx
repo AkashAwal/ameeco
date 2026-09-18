@@ -56,7 +56,7 @@ export default function Home() {
           <div className="shrink-0 rounded-3xl border-4 border-[#5e3825] bg-white p-2 pb-4 shadow-[6px_6px_0_0_#5e382555]">
             <Image
               src="/ipsita.webp"
-              alt="Ipsita Gupta, founder of Ameeco"
+              alt="Iipsita Gupta, founder of Ameeco"
               width={360}
               height={480}
               className="h-[320px] w-[240px] rounded-2xl object-cover"
@@ -65,7 +65,7 @@ export default function Home() {
               className="mt-[15px] text-center text-3xl tracking-wide text-[#5e3825]"
               style={{ fontFamily: "var(--font-baloo-2)", fontWeight: 700 }}
             >
-              IPSITA GUPTA
+              IIPSITA GUPTA
             </p>
           </div>
 
@@ -75,7 +75,7 @@ export default function Home() {
               style={{ fontFamily: "var(--font-baloo-2)" }}
             >
               Ameeco began with a craving that turned into a calling. Our
-              founder, Ipsita Gupta, has always felt a deep, soulful
+              founder, Iipsita Gupta, has always felt a deep, soulful
               connection to the cookie and gelato culture, the way a single
               bite can hold a memory, a mood, a moment of pure joy. She
               dreamt of sharing that beauty with everyone around her, of
