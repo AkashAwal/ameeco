@@ -1,6 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import { google } from "googleapis";
-import { Resend } from "resend";
 import dns from "node:dns/promises";
 
 async function isEmailDomainValid(email: string) {
@@ -19,59 +17,30 @@ async function isEmailDomainValid(email: string) {
   }
 }
 
-async function appendToSheet(row: string[]) {
-  const email = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
-  const key = process.env.GOOGLE_PRIVATE_KEY;
-  const sheetId = process.env.GOOGLE_SHEET_ID;
+async function submitToAppsScript(entry: {
+  name: string;
+  phone: string;
+  email: string;
+  source: string;
+}) {
+  const url = process.env.GOOGLE_APPS_SCRIPT_URL;
+  const secret = process.env.GOOGLE_APPS_SCRIPT_SECRET;
 
-  if (!email || !key || !sheetId) {
-    throw new Error("Google Sheets is not configured");
+  if (!url || !secret) {
+    throw new Error("Google Apps Script is not configured");
   }
 
-  const auth = new google.auth.JWT({
-    email,
-    key: key.replace(/\\n/g, "\n"),
-    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ...entry, secret }),
+    redirect: "follow",
   });
 
-  const sheets = google.sheets({ version: "v4", auth });
-
-  await sheets.spreadsheets.values.append({
-    spreadsheetId: sheetId,
-    range: "Sheet1!A:F",
-    valueInputOption: "USER_ENTERED",
-    insertDataOption: "INSERT_ROWS",
-    requestBody: { values: [row] },
-  });
-}
-
-async function sendConfirmationEmail(name: string, email: string) {
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
-    throw new Error("Resend is not configured");
+  const data = await res.json();
+  if (!res.ok || data.error) {
+    throw new Error(data.error || `Apps Script request failed (${res.status})`);
   }
-
-  const resend = new Resend(apiKey);
-
-  await resend.emails.send({
-    from: "Ameeco <contact@ameeco.in>",
-    to: email,
-    subject: "We've received your entry!",
-    html: `
-      <div style="font-family: sans-serif; max-width: 480px; margin: 0 auto;">
-        <h1 style="color: #5e3825;">Thanks, ${name}!</h1>
-        <p style="color: #5e3825; font-size: 16px; line-height: 1.6;">
-          We've received your entry. Thanks for your time, and for being
-          one of the first to join the Ameeco family. We can't wait to
-          welcome you at the Galleria, Gurgaon, very soon.
-        </p>
-        <p style="color: #5e3825; font-size: 16px; line-height: 1.6;">
-          Keep an eye on your inbox, we'll be in touch.
-        </p>
-        <p style="color: #5e3825; font-size: 16px;">— Team Ameeco</p>
-      </div>
-    `,
-  });
 }
 
 export async function POST(req: NextRequest) {
@@ -102,30 +71,13 @@ export async function POST(req: NextRequest) {
   const resolvedSource = source === "others" ? sourceOther || "Others" : source;
 
   try {
-    await appendToSheet([
-      "=ROW()-1",
-      new Date().toLocaleString("en-IN", {
-        timeZone: "Asia/Kolkata",
-        dateStyle: "medium",
-        timeStyle: "short",
-      }),
-      name,
-      phone,
-      email,
-      resolvedSource,
-    ]);
+    await submitToAppsScript({ name, phone, email, source: resolvedSource });
   } catch (err) {
-    console.error("Failed to write to Google Sheet:", err);
+    console.error("Failed to submit entry via Apps Script:", err);
     return NextResponse.json(
       { error: "Something went wrong saving your entry. Please try again." },
       { status: 500 }
     );
-  }
-
-  try {
-    await sendConfirmationEmail(name, email);
-  } catch (err) {
-    console.error("Failed to send confirmation email:", err);
   }
 
   return NextResponse.json({ ok: true });
